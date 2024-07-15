@@ -1,17 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementsByClassName("open")[0]
-    .addEventListener("click", function () {
-      document
-        .getElementsByClassName("card-packaging")[0]
-        .classList.add("is-open");
-    });
+document.getElementById("openLetter").addEventListener("click", function () {
+  document.getElementById("letterContent").style.display = "block";
+});
 
-  document
-    .getElementsByClassName("close")[0]
-    .addEventListener("click", function () {
-      document
-        .getElementsByClassName("card-packaging")[0]
-        .classList.remove("is-open");
-    });
+document.getElementById("closeLetter").addEventListener("click", function () {
+  document.getElementById("letterContent").style.display = "none";
 });
